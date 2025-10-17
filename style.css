@@ -1,7 +1,7 @@
-/* PALET WARNA CV */
+/* PALET WARNA CV (Biru Tua dan Kuning Emas) */
 :root {
-    --color-blue-primary: #172a3a; /* Biru Tua yang Profesional */
-    --color-yellow-accent: #ffb800; /* Kuning Emas/Kuning Terang */
+    --color-blue-primary: #172a3a; /* Biru Tua */
+    --color-yellow-accent: #ffb800; /* Kuning Emas */
     --color-text: #333333;
     --color-light-bg: #f7f7f7;
     --color-white: #ffffff;
@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-light-bg);
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Navigasi lebih halus */
 }
 
 a {
@@ -34,7 +34,7 @@ a:hover {
 }
 
 .text-blue { color: var(--color-blue-primary); }
-.text-yellow { color: var(--color-yellow-accent); }
+.text-yellow { color: var(--color-yellow-accent) !important; }
 
 /* NAVIGASI BAR */
 .navbar {
@@ -63,11 +63,11 @@ a:hover {
 .navbar ul li a {
     font-weight: 600;
     margin-left: 2rem;
-    font-size: 0.95rem;
     position: relative;
+    color: var(--color-blue-primary);
 }
 
-/* Efek Garis Bawah pada Navigasi */
+/* Efek Garis Bawah Animasi pada Navigasi */
 .navbar ul li a::after {
     content: '';
     position: absolute;
@@ -90,7 +90,7 @@ a:hover {
     margin: 0 auto;
 }
 
-.section:nth-child(even) { /* Latar belakang bergantian untuk kejelasan */
+.section:nth-child(even) { /* Latar belakang bergantian */
     background-color: var(--color-white);
 }
 
@@ -102,8 +102,13 @@ a:hover {
     color: var(--color-blue-primary);
     position: relative;
     padding-bottom: 10px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Garis bawah tebal pada Judul Section (Aksen Kuning) */
 .section-title::after {
     content: '';
     position: absolute;
@@ -123,13 +128,12 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--color-blue-primary); /* Latar belakang Biru */
+    background: var(--color-blue-primary);
     color: var(--color-white);
 }
 
 .hero-content h1 {
     font-size: 4.5rem;
-    margin-bottom: 0.5rem;
     letter-spacing: 2px;
 }
 
@@ -137,10 +141,230 @@ a:hover {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: var(--color-yellow-accent);
 }
 
 /* BUTTONS */
 .btn-primary {
     display: inline-block;
-    padding:
+    padding: 0.9rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.4s;
+    background-color: var(--color-yellow-accent);
+    color: var(--color-blue-primary);
+    border: 2px solid var(--color-yellow-accent);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-blue-primary);
+    color: var(--color-yellow-accent);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(255, 184, 0, 0.3);
+}
+
+/* TENTANG SAYA (ABOUT) */
+.about-card {
+    background-color: var(--color-white);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid var(--color-yellow-accent);
+}
+
+.soft-skills-title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--color-blue-primary);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed #ddd;
+}
+
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 1.5rem;
+}
+
+.skill-tag {
+    background-color: var(--color-blue-primary);
+    color: var(--color-white);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.skill-tag:hover {
+    transform: scale(1.05);
+    background-color: var(--color-yellow-accent);
+    color: var(--color-blue-primary);
+}
+
+
+/* KETERAMPILAN / HARD SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background-color: var(--color-white);
+    color: var(--color-blue-primary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.skill-item:hover {
+    box-shadow: 0 10px 20px rgba(255, 184, 0, 0.2);
+    transform: translateY(-5px);
+    border-color: var(--color-yellow-accent);
+    background-color: var(--color-light-bg);
+}
+
+/* RIWAYAT (Timeline Style) */
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.timeline-column h3 {
+    font-size: 1.6rem;
+    color: var(--color-blue-primary);
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 2px solid var(--color-yellow-accent);
+    padding-bottom: 10px;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--color-yellow-accent); /* Penanda timeline */
+    transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item h4 {
+    font-size: 1.15rem;
+    color: var(--color-blue-primary);
+    font-weight: 700;
+}
+
+/* HOBI SECTION */
+.hobbies-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hobby-item {
+    padding: 1.5rem 2.5rem;
+    border-radius: 5px;
+    background-color: var(--color-light-bg);
+    color: var(--color-blue-primary);
+    font-weight: 600;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.hobby-item:hover {
+    background-color: var(--color-yellow-accent);
+    color: var(--color-blue-primary);
+    border-color: var(--color-yellow-accent);
+    transform: scale(1.05);
+}
+
+
+/* KONTAK */
+.contact-section {
+    text-align: center;
+    background-color: var(--color-blue-primary);
+    color: var(--color-white);
+}
+
+.contact-section .section-title {
+    color: var(--color-white);
+}
+.contact-section .section-title::after {
+     background-color: var(--color-yellow-accent);
+}
+
+.contact-info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    padding: 1.5rem;
+    border: 1px solid var(--color-yellow-accent);
+    border-radius: 8px;
+    min-width: 280px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item p {
+    color: var(--color-light-bg);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #0d1a26;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES UNTUK RESPONSIVITAS (Mobile View) */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    
+    .navbar ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+}
