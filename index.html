@@ -3,26 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portofolio — Melani Widiastuti</title>
-    <meta name="description" content="Portofolio interaktif Melani Widiastuti (Web Developer Frontend) untuk melamar magang. Mencakup proyek React.js, UI/UX, dan pengalaman organisasi." />
-    <meta name="keywords" content="portofolio magang, web developer, frontend, react js, ui/ux, melani widiastuti">
+    <title>Portofolio — Melani Widiastuti (Junior Web Dev)</title>
+    <meta name="description" content="Portofolio Melani Widiastuti, Junior Frontend Developer, tema pastel biru gradasi untuk melamar magang. Mencakup proyek React.js dan UI/UX." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/favicon.png"> 
 </head>
 <body>
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
 
     <nav class="navbar" role="navigation">
         <div class="container">
-            <a href="#hero" class="brand">Melani.</a>
+            <a href="#hero" class="brand">Melani.dev</a>
             <ul class="nav-links" id="nav-links-menu" role="menubar">
-                <li role="none"><a href="#about" role="menuitem">Profil</a></li>
-                <li role="none"><a href="#education" role="menuitem">Pendidikan</a></li>
-                <li role="none"><a href="#experience" role="menuitem">Pengalaman</a></li>
-                <li role="none"><a href="#portfolio" role="menuitem">Portofolio</a></li>
-                <li role="none"><a href="#contact" class="btn btn-primary" role="menuitem">Hubungi</a></li>
+                <li><a href="#about" role="menuitem">Profil & Skill</a></li>
+                <li><a href="#education" role="menuitem">Pendidikan</a></li>
+                <li><a href="#experience" role="menuitem">Organisasi</a></li>
+                <li><a href="#portfolio" role="menuitem">Portofolio</a></li>
+                <li><a href="#contact" class="btn btn-primary" role="menuitem">Magang</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links-menu">
                 <span></span>
@@ -33,175 +30,59 @@
     </nav>
 
     <header id="hero" class="hero-section" role="banner">
-        <div class="container">
-            <div class="hero-content">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+            <div class="hero-content" style="flex: 1; min-width: 300px;">
                 <p class="greeting">Halo, saya</p>
                 <h1>Melani Widiastuti</h1>
-                <p class="tagline">Calon Frontend Developer | Desainer UI/UX | React Enthusiast</p>
-                <p class="intro-text">
-                    Saya seorang mahasiswa **Teknik Informatika** yang bersemangat dalam mengembangkan antarmuka digital yang **responsif** dan **berfokus pada pengguna**. Saya memiliki pengalaman dalam membangun aplikasi web modern menggunakan **React.js** dan mencari kesempatan magang untuk memperdalam keahlian *full-stack*.
+                <p class="tagline">Junior Web Developer | Frontend & UI/UX Enthusiast</p>
+                <p class="intro-text" style="font-size: 1.1em; max-width: 600px; margin-bottom: 35px;">
+                    Mahasiswa **Teknik Informatika** yang berfokus pada pengembangan **Frontend modern** dan desain antarmuka yang intuitif. Saya menggunakan **React.js** untuk membangun aplikasi web yang responsif, dan siap berkontribusi dalam tim magang Anda.
                 </p>
-                <div class="hero-buttons">
+                <div class="hero-buttons" style="display: flex; gap: 15px; flex-wrap: wrap;">
                     <a href="#portfolio" class="btn btn-primary">Lihat Proyek</a>
-                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                    <a href="mailto:melani.widiastuti.dev@email.com" class="btn btn-secondary">Kirim Email</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://via.placeholder.com/400x400/0f1724/FFFFFF?text=Foto+Melani+Widiastuti" alt="Foto Profil Melani Widiastuti">
+                <img src="https://via.placeholder.com/400x400/89b4f5/1e3a8a?text=Foto+Melani+Widiastuti" alt="Foto Profil Melani Widiastuti">
             </div>
         </div>
     </header>
 
     <main id="main-content">
-        <section id="about" class="section" aria-labelledby="about-heading">
+        <section id="about" class="section">
             <div class="container">
-                <h2 id="about-heading">Profil Saya</h2>
+                <h2>Profil & Keahlian</h2>
                 <div class="section-content">
-                    <p>Saya adalah individu yang proaktif dan berorientasi pada pemecahan masalah. Saya sangat tertarik pada **pengembangan frontend modern**, khususnya dalam menciptakan pengalaman pengguna yang mulus dan performa website yang optimal. Saya selalu bersemangat mempelajari teknologi baru dan siap berkontribusi dalam lingkungan tim yang dinamis.</p>
-                    <h3>Keahlian Teknis</h3>
+                    <p>Saya seorang pemecah masalah yang sistematis dan detail-oriented. Keahlian saya berpusat pada eksekusi visual yang sempurna (Pixel-Perfect) dan memastikan kode berjalan optimal di berbagai perangkat.</p>
+                    <h3>Keahlian Utama</h3>
                     <ul class="skills-list">
                         <li>HTML5 & CSS3 (Advanced)</li>
                         <li>JavaScript (ES6+)</li>
-                        <li>Framework/Library: React.js, Next.js (Dasar)</li>
-                        <li>Styling: Tailwind CSS, SASS</li>
-                        <li>Version Control: Git, GitHub</li>
-                        <li>Desain & Prototype: Figma</li>
-                        <li>Database: MySQL (Dasar)</li>
+                        <li>**React.js (Library)**</li>
+                        <li>Tailwind CSS / SASS</li>
+                        <li>Figma (UI/UX)</li>
+                        <li>Git & GitHub</li>
+                        <li>Rest API Integration</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="section" aria-labelledby="education-heading">
+        <section id="education" class="section">
             <div class="container">
-                <h2 id="education-heading">Pendidikan</h2>
+                <h2>Pendidikan</h2>
                 <div class="section-content">
                     <div class="timeline">
-                        <div class="timeline-item">
-                            <h3>Universitas Teknologi Indonesia</h3>
-                            <p class="timeline-meta">Sarjana Teknik Informatika | 2021 - Sekarang (Tahun ke-4)</p>
-                            <p>IPK Terakhir: 3.75/4.00</p>
-                            <ul>
-                                <li>Fokus pada mata kuliah Pengembangan Aplikasi Web, Algoritma dan Struktur Data, serta Desain Antarmuka Pengguna.</li>
-                                <li>Mengikuti program intensif "Kampus Merdeka" bidang Frontend Development.</li>
+                        <div class="timeline-item" style="left: 0; text-align: right;">
+                            <h3>Universitas Teknologi Jakarta</h3>
+                            <p class="timeline-meta" style="color: var(--blue-darker); font-weight: 600;">Sarjana Teknik Informatika | 2021 - Sekarang (Semester 7)</p>
+                            <ul style="list-style: disc; margin-right: 20px; margin-left: 0;">
+                                <li>**IPK: 3.80/4.00**. Fokus pada Pengembangan Aplikasi Web.</li>
+                                <li>Peserta aktif Program Merdeka Belajar (Studi Independen) bidang Frontend Development.</li>
                             </ul>
                         </div>
-                        <div class="timeline-item">
-                            <h3>SMA Negeri 1 Jakarta</h3>
-                            <p class="timeline-meta">Jurusan IPA | 2018 - 2021</p>
-                            <ul>
-                                <li>Anggota aktif tim IT sekolah, bertanggung jawab untuk pemeliharaan *website* informasi sekolah.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section" aria-labelledby="experience-heading">
-            <div class="container">
-                <h2 id="experience-heading">Pengalaman Organisasi & Volunteer</h2>
-                <div class="section-content">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <h3>Himpunan Mahasiswa Teknik Informatika (HIMATIF)</h3>
-                            <p class="timeline-meta">Staf Divisi Teknologi & Informasi | Sep 2022 - Des 2023</p>
-                            <ul>
-                                <li>Bertanggung jawab penuh atas pembaruan konten dan pemeliharaan *website* resmi HIMATIF (CMS WordPress).</li>
-                                <li>Berhasil merancang ulang tampilan landing page acara kampus menggunakan HTML/CSS dalam waktu 3 hari.</li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item">
-                            <h3>Volunteer Gerakan Peduli Lingkungan</h3>
-                            <p class="timeline-meta">Tim Dokumentasi Digital | Mar 2022</p>
-                            <ul>
-                                <li>Mengelola dan mengkurasi foto serta video kegiatan untuk publikasi di media sosial dan laporan akhir.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="section" aria-labelledby="portfolio-heading">
-            <div class="container">
-                <h2 id="portfolio-heading">Portofolio Pembuatan Website</h2>
-                <div class="project-grid">
-
-                    <div class="project-card">
-                        <div class="project-screenshot">
-                            <img src="https://via.placeholder.com/800x500/1a2233/FFFFFF?text=Screenshot+Project+1+eCommerce" alt="Screenshot Aplikasi TukuBuku (E-Commerce)">
-                        </div>
-                        <h3>TukuBuku: Aplikasi E-Commerce Buku</h3>
-                        <p class="project-description">
-                            Platform *e-commerce* dengan fitur autentikasi, keranjang belanja, *search/filter* canggih, dan *dashboard* admin untuk manajemen produk. Proyek ini dibangun sebagai tugas akhir mata kuliah.
-                        </p>
-                        <div class="tech-stack">
-                            <span>React.js</span>
-                            <span>Tailwind CSS</span>
-                            <span>Node.js (Express)</span>
-                            <span>MongoDB</span>
-                            <span>Redux</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://demo.tukubuku.com" target="_blank" class="btn btn-secondary">Demo Langsung</a>
-                            <a href="https://github.com/melani/tukubuku-mern-stack" target="_blank" class="btn btn-tertiary">GitHub Repo</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-screenshot">
-                            <img src="https://via.placeholder.com/800x500/1a2233/FFFFFF?text=Screenshot+Project+2+Interactive+Landing+Page" alt="Screenshot Aplikasi FinBuddy (Landing Page)">
-                        </div>
-                        <h3>FinBuddy: Landing Page Aplikasi Keuangan</h3>
-                        <p class="project-description">
-                            Landing page responsif dan interaktif untuk aplikasi *fintech* (keuangan pribadi). Fokus pada desain UI/UX yang *clean* dan animasi CSS yang halus untuk pengalaman *marketing* yang efektif.
-                        </p>
-                        <div class="tech-stack">
-                            <span>HTML5</span>
-                            <span>SASS</span>
-                            <span>Vanilla JavaScript</span>
-                            <span>GSAP (Animation Library)</span>
-                            <span>Figma (UI Design)</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://demo.finbuddy.com" target="_blank" class="btn btn-secondary">Demo Langsung</a>
-                            <a href="https://github.com/melani/finbuddy-landing-page" target="_blank" class="btn btn-tertiary">GitHub Repo</a>
-                        </div>
-                    </div>
-
-                    </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading">Tertarik Bekerja Sama?</h2>
-                <p class="contact-text">Saya sangat antusias mencari kesempatan magang di perusahaan Anda. Silakan hubungi saya untuk wawancara atau diskusi lebih lanjut.</p>
-                <div class="contact-details">
-                    <p>Email: <a href="mailto:melani.widiastuti.dev@email.com">melani.widiastuti.dev@email.com</a></p>
-                    <p>LinkedIn: <a href="https://linkedin.com/in/melani-widiastuti" target="_blank">linkedin.com/in/melani-widiastuti</a></p>
-                    <p>GitHub: <a href="https://github.com/melaniwidiastuti" target="_blank">github.com/melaniwidiastuti</a></p>
-                    <a href="mailto:melani.widiastuti.dev@email.com" class="btn btn-primary large-btn">Kirim Email</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <p>&copy; 2025 Melani Widiastuti. Hak Cipta Dilindungi.</p>
-            <div class="social-links">
-                <a href="https://github.com/melaniwidiastuti" target="_blank" aria-label="Kunjungi profil GitHub Melani">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c.43-1.03-.52-2.06-1.5-2.06zM12 17.51h.01"></path></svg>
-                </a>
-                <a href="https://linkedin.com/in/melani-widiastuti" target="_blank" aria-label="Kunjungi profil LinkedIn Melani">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                        <div class="timeline-item" style="left: 50%; text-align: left;">
+                            <h3>Lembaga Sertifikasi Profesi (LSP)</h3>
+                            <p class="timeline-meta" style="color: var(--blue-darker); font-weight: 600;">Sertifikasi Junior Web Developer | 2024</p>
+                            <ul
